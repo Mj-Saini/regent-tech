@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: #000;
+}
+
+.ff_montserrat {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.footer_social_icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer_social_icon svg path {
+  fill: white !important;
+}
+
+.footer_social_icon svg:hover path {
+  fill: #009CB9 !important;
+}
+
+.footer_tel_icon svg path {
+  fill: black
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* scroll animation */
+.animate_to_right {
+  animation: scroll_right 4s linear 10s infinite;
+}
+
+@keyframes scroll_right {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(-100px);
+  }
+
+}
+
+.animate_to_left {
+  animation: scroll_left 4s linear 10s infinite;
+}
+
+@keyframes scroll_left {
+  0% {
+    transform: translateX(100px);
+  }
+
+  50% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+/* ABOUT PAGE FOUNDER CSS */
+.gradient_border {
+  border: 1px solid transparent;
+  background: linear-gradient(black, black)padding-box, linear-gradient(90deg, #141315 0%, #FFFFFF 16.5%, #EAEAEA 86.5%, #020103 100%)border-box;
+}
+
+.gradient_border2_before::before {
+  border-left: 1px solid transparent;
+  background: linear-gradient(black, black)padding-box, linear-gradient(180deg, #141315 0%, #FFFFFF 16.5%, #EAEAEA 86.5%, #020103 100%)border-box;
+}
+
+.gradient_border2_after::after {
+  border-right: 1px solid transparent;
+  background: linear-gradient(black, black)padding-box, linear-gradient(180deg, #141315 0%, #FFFFFF 16.5%, #EAEAEA 86.5%, #020103 100%)border-box;
+}
+
+.contect_form_icon svg {
+  width: 40px;
+  height: 40px;
+  opacity: .5;
+}
+
+.contect_form_icon svg path {
+  fill: black
+}
+
+
+
+/* our partner logo animation */
+.slick-next:before {
+  display: none !important;
+}
+
+.slick-prev:before {
+  display: none !important;
+}
+
+.slider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+
+  transform: translateX(0);
+}
+
+.slider-item {
+  width: auto;
+  min-width: 100px;
+  flex: 0 0 auto;
+}
+
+.slider.to-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+.slider.to-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 100% !important;
+  min-height: 400px !important;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.slick-list {
+  height: 100% !important;
+
+}
+
+.slick-slide>div {
+  display: flex !important;
+  flex-direction: column;
+  height: 100% !important;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 16px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: #51F1F9 !important;
+}
