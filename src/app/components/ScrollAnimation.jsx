@@ -85,7 +85,6 @@ function ServiceType() {
           className="rightblock w-5/12 items-center hidden lg:flex"
           sx={{
             height: "100vh",
-            display: "flex",
             flexDirection: "column",
             justifyContent: "center",
           }}
